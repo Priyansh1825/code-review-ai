@@ -1,0 +1,35 @@
+{
+  "test_cases": [
+    {
+      "id": 1,
+      "language": "python",
+      "code": "def add(a, b): return a + b",
+      "expected_issues": [],
+      "expected_score": 95,
+      "category": "simple_function"
+    },
+    {
+      "id": 2,
+      "language": "python",
+      "code": "def connect():\n    password = 'secret'\n    return password",
+      "expected_issues": ["HARDCODED_SECRET"],
+      "expected_score": 60,
+      "category": "security"
+    },
+    {
+      "id": 3,
+      "language": "python",
+      "code": "def complex():\n    for i in range(10):\n        for j in range(10):\n            for k in range(10):\n                print(i+j+k)",
+      "expected_issues": ["HIGH_COMPLEXITY"],
+      "expected_score": 70,
+      "category": "complexity"
+    }
+  ],
+  "performance_test_cases": [
+    {
+      "name": "large_file",
+      "lines_of_code": 500,
+      "purpose": "test_performance_large_files"
+    }
+  ]
+}
