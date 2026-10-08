@@ -1,0 +1,45 @@
+.App {
+  text-align: center;
+}
+
+.analysis-container {
+  margin-top: 20px;
+}
+
+.code-score {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+.score-excellent {
+  color: #4caf50;
+}
+
+.score-good {
+  color: #ff9800;
+}
+
+.score-poor {
+  color: #f44336;
+}
+
+.issue-list {
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.suggestion-item {
+  background-color: #e3f2fd;
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 5px;
+  border-left: 4px solid #2196f3;
+}
+
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+}
